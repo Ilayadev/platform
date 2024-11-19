@@ -1,0 +1,33 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    column-gap: 12px;
+}
+.link{
+    padding: 5px 12px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.body{
+    padding: 20px;    
+    flex-grow: 1;   
+    display: flex; 
+}
+
+
+  

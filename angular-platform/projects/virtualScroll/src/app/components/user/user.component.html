@@ -1,0 +1,30 @@
+<div class="container">
+    <!-- HTML element -->
+    <div class="scroll-container">  
+        <!-- <ng-container *virtualScroll="let item of items;itemSize:93;index as i">
+            <div class="child">item value {{item}} index {{i}}</div>
+            <div>ilaya</div>     
+        </ng-container>        -->
+        <!-- <ng-container *ngFor="let item of items">
+            <div class="child">item value {{item}}</div>
+            <div>ilaya</div> 
+        </ng-container> -->
+
+        <div class="child" *virtualScroll="let item of items;itemSize:93">
+            <div>item value {{item.value}} index {{item.index}}</div>
+            <div *ngIf="item.index%2 === 0">ilaya</div>
+            <div *ngIf="item.index%2 === 1">selva ganesh</div>
+        </div>
+    </div>   
+
+
+    <!-- USER-component -->
+    <!-- <app-user-list>
+        <div>
+            <div *virtualScroll="let item of items;itemSize:93;index as i" class="child">item value {{item}} index {{i}}</div>
+        </div>
+    </app-user-list> -->
+
+    
+</div>
+
